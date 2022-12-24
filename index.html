@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's Makhmal</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at -8.9% 51.2%,
+          rgb(255, 124, 0) 0%,
+          rgb(255, 124, 0) 15.9%,
+          rgb(255, 163, 77) 15.9%,
+          rgb(255, 163, 77) 24.4%,
+          rgb(19, 30, 37) 24.5%,
+          rgb(19, 30, 37) 66%
+        );
+      }
+      h2,
+      h1,
+      .footer {
+        text-align: center;
+        font-family: system-ui;
+      }
+      h1 {
+        color: #ff8b00;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #ffc60b;
+        font-style: italic;
+        margin: 15px auto;
+      }
+      hr {
+        background-color: #ff8b00;
+        height: 5px;
+        border: none;
+        border-radius: 3px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 10px;
+      }
+      p {
+        font-family: system-ui;
+        color: #444444;
+        line-height: 1.5;
+      }
+      a {
+        color: #444444;
+        font-family: system-ui;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #ff8b00;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        cursor: pointer;
+        font-family: system-ui;
+        font-size: 16px;
+        font-weight: 500;
+        color: #444444;
+        padding: 12px 18px;
+        border: 2px solid #ff8b00;
+        background-color: #ff8b00;
+        border-radius: 30px;
+        box-shadow: 3px 4px 5px #444444;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #feffdb;
+        opacity: 0.9;
+      }
+      .page-container {
+        max-width: 400px;
+        margin: 0px auto;
+        background-color: #feffdb;
+        border-radius: 4px;
+        padding: 10px 25px;
+        opacity: 0.9;
+      }
+      .quote {
+        font-style: italic;
+      }
+      .footer {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>It's all about <em>Makhmal</em></h1>
+      <h2>The goodest boy!</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/853/original/16664584435192.png?1666523066"
+        alt="Makhmal"
+      />
+      <hr />
+      <p>
+        Hi, my name is
+        <strong>
+          <em> Makhmal </em>
+        </strong>
+        and mom says i'm the best. Im 9 years old and i had to choose my human
+        by sneezing on her face when i was two weeks old😸. She wanted to make
+        her homework about brave beautiful revolutionary girls in Iran✊, but
+        she is down with the "Flu🤧",
+        <span class="quote">I think it's the covid!</span>
+        so too sick and unprepeared to make something worthy. as always! she
+        promised me super premium meals too! but it was just for two years then
+        she was broke and there were no Gourmet Gold available in our country.
+        She is trying to make things up to me. She promised.
+      </p>
+      <a href="https://www.instagram.com/makhmaltheblue" target="_blank">
+        👉see my photoes and videos
+      </a>
+      <br />
+      <button>send Makhmal treats😻</button>
+      <div class="footer">Coded by Makhmal's Mom</div>
+    </div>
+    <script>
+      function sendTreat() {
+        let name = prompt("what's your name?");
+        let quantity = prompt("How many treats do you want to send me?");
+        if (quantity < 3) {
+          alert(`really ${name}! only ${quantity} 😾`);
+        } else {
+          alert(`Thanks ${name}, You can be my friend!😽`);
+        }
+      }
+      let treatButton = document.querySelector("button");
+      treatButton.addEventListener("click", sendTreat);
+    </script>
+  </body>
+</html>
